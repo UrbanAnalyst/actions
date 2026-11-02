@@ -37,8 +37,8 @@ runs:
       env:
         MIRRORS: ${{ inputs.mirrors }}
       run: |
-        git config --global user.name "ropensci"
-        git config --global user.email "noreply@ropensci.org"
+        git config --global user.name "mpadge"
+        git config --global user.email "mark.padgham@email.com"
         while IFS='=' read -r name url; do
           [ -z "$name" ] && continue
           echo "Pushing to mirror: $name"

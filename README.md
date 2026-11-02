@@ -26,12 +26,12 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - uses: urbananalyst/actions/push-to-elsewhere@main
+      - uses: UrbanAnalyst/actions/push-to-elsewhere@main
         with:
           branch: main
           mirrors: |
-            codeberg=https://${{ secrets.UNAME }}:${{ secrets.CODEBERG }}@codeberg.org/urbananalyst/repo.git
-            codefloe=https://${{ secrets.UNAME }}:${{ secrets.CODEFLOE }}@codefloe.com/urbananalyst/repo.git
+            codeberg=https://${{ secrets.UNAME }}:${{ secrets.CODEBERG }}@codeberg.org/UrbanAnalyst/repo.git
+            codefloe=https://${{ secrets.UNAME }}:${{ secrets.CODEFLOE }}@codefloe.com/UrbanAnalyst/repo.git
 ```
 
 On pull requests the step completes as a no-op so a required check reads
